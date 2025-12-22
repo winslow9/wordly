@@ -1,6 +1,6 @@
 package ru.yandex.practicum;
 
-import customExceptions.EniviromentExceptions.DictonaryIsNotCreatedException;
+import custom.exceptions.eniviroment.exceptions.DictonaryIsNotCreatedException;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

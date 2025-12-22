@@ -1,9 +1,9 @@
 package ru.yandex.practicum;
 
-import customExceptions.EniviromentExceptions.DictionaryIsEmptyException;
-import customExceptions.GameProcessExceptions.ForbidenLanguageException;
-import customExceptions.GameProcessExceptions.WordNotFoundInDictionary;
-import customExceptions.GameProcessExceptions.WrongLengthException;
+import custom.exceptions.eniviroment.exceptions.DictionaryIsEmptyException;
+import custom.exceptions.game.process.exceptions.ForbidenLanguageException;
+import custom.exceptions.game.process.exceptions.WordNotFoundInDictionary;
+import custom.exceptions.game.process.exceptions.WrongLengthException;
 
 import java.io.OutputStreamWriter;
 import java.util.*;

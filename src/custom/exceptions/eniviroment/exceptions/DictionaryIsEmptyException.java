@@ -1,4 +1,4 @@
-package customexceptions.EniviromentExceptions;
+package custom.exceptions.eniviroment.exceptions;
 
 public class DictionaryIsEmptyException extends Exception {
     public DictionaryIsEmptyException(String message) {

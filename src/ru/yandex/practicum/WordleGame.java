@@ -152,7 +152,7 @@ public class WordleGame {
         if (remainingWords == null || remainingWords.isEmpty()) {
             return "Нет подходящих слов!";
         }
-        if (availibleHints<=0){
+        if (availibleHints <= 0) {
             return "Подсказок не осталось";
         }
         // Выбираем случайное слово из оставшихся возможных

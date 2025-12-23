@@ -1,6 +1,6 @@
 package custom.exceptions.eniviroment.exceptions;
 
-public class DictionaryIsEmptyException extends Exception {
+public class DictionaryIsEmptyException extends RuntimeException {
     public DictionaryIsEmptyException(String message) {
         super(message);
     }

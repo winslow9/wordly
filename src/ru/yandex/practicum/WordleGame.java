@@ -20,6 +20,7 @@ public class WordleGame {
     private HintSystem hintSystem;
     private List<String> allWords;
     private List<String> remainingWords;
+    public static int availibleHints = 3;
 
     public WordleGame() {
         this.hintSystem = new HintSystem();
@@ -151,8 +152,12 @@ public class WordleGame {
         if (remainingWords == null || remainingWords.isEmpty()) {
             return "Нет подходящих слов!";
         }
+        if (availibleHints<=0){
+            return "Подсказок не осталось";
+        }
         // Выбираем случайное слово из оставшихся возможных
         String hint = remainingWords.get(random.nextInt(remainingWords.size()));
+        availibleHints--;
         return hint;
     }
 

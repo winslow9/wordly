@@ -23,7 +23,7 @@ public class Wordle {
             writer = createLogFile("log.txt");
 
             System.out.println("Файл log.txt создан");
-            System.out.println("Введите слово из 5 букв или нажмите Enter для подсказки");
+            System.out.println("Введите слово из 5 букв или нажмите Enter для подсказки. Для выхода из игры напишите СТОП.");
 
             WordleDictionaryLoader wdl = new WordleDictionaryLoader();
 
@@ -56,6 +56,11 @@ public class Wordle {
                         continue;
                     }
 
+                    // Выход из игры
+                    if (guess.equals("СТОП")) {
+                        break;
+                    }
+
                     try {
                         String result = wg.checkGuess(guess);
                         System.out.println("Результат: " + result);
@@ -83,7 +88,7 @@ public class Wordle {
                 }
 
                 if (!wg.isIsWin()) {
-                    System.out.println("\nИгра окончена! У вас закончились попытки.");
+                    System.out.println("\nИгра окончена!");
                     System.out.println("Загаданное слово было: " + wg.getAnswer());
                 }
 
